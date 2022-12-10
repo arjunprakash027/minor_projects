@@ -29,7 +29,7 @@ def send_mail():
   server.starttls()
   server.ehlo()
 
-  server.login('aiarjun027@gmail.com','arjun1234')
+  server.login('aiarjun027@gmail.com','password')
 
   subject = 'price fell down!!!!'
   body ='check the link https://www.amazon.in/boAt-Airdopes-141-Wireless-Resistance/dp/B09N3ZNHTY/ref=asc_df_B09N3ZNHTY/?tag=googleshopdes-21&linkCode=df0&hvadid=545088051503&hvpos=&hvnetw=g&hvrand=15664384979627146403&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9061935&hvtargid=pla-1625292053964&th=1'
