@@ -1,0 +1,8 @@
+{
+  "type":"module",
+  "dependencies": {
+    "node-fetch": "^3.3.0",
+    "xhr2": "^0.2.1"
+  }
+}
+

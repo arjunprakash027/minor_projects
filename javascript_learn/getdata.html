@@ -1,0 +1,32 @@
+<html>
+<body>
+<p id="demo">{{ a }}</p>
+<script type = "module" src="trial.js"></script>
+<script>
+
+ async function getdatas()
+{
+    var a = document.getElementById('a').value;
+    console.log(a)
+    const url = `https://arjunro.herokuapp.com/get_stock/${a}`;
+    console.log(url)
+    let response = await fetch(url);
+    console.log(response)
+    let data = await response.json();
+    console.log(data);
+    document.getElementById("demo").innerHTML = "k";
+}
+</script>
+
+
+
+ <form action="" onsubmit="getdatas()" name="form1" id="form1">
+    a: <input type="text" name="a" id="a" value="INFY"><br>
+    <input type="submit" value="Submit" name="submit">
+    
+  <!-- <button onclick="getdatas()">Click me</button> -->
+
+
+
+</body>
+</html>
